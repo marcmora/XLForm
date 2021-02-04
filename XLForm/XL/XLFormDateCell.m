@@ -230,20 +230,21 @@
 -(void)setStyleToDatePicker:(UIDatePicker *)datePicker
 {
     if (@available(iOS 14.0, *)) {
-        switch (self.formDatePickerStyle) {
-            case XLFormDateDatePickerStyleInline:
-                datePicker.preferredDatePickerStyle = UIDatePickerStyleInline;
-                break;
-            case XLFormDateDatePickerStyleCompact:
-                datePicker.preferredDatePickerStyle = UIDatePickerStyleCompact;
-                break;
-            case XLFormDateDatePickerStyleWheels:
-                datePicker.preferredDatePickerStyle = UIDatePickerStyleWheels;
-                break;
-            default:
-                datePicker.preferredDatePickerStyle = UIDatePickerStyleAutomatic;
-                break;
-        }
+        datePicker.preferredDatePickerStyle = UIDatePickerStyleWheels;
+//        switch (self.formDatePickerStyle) {
+//            case XLFormDateDatePickerStyleInline:
+//                datePicker.preferredDatePickerStyle = UIDatePickerStyleInline;
+//                break;
+//            case XLFormDateDatePickerStyleCompact:
+//                datePicker.preferredDatePickerStyle = UIDatePickerStyleCompact;
+//                break;
+//            case XLFormDateDatePickerStyleWheels:
+//                datePicker.preferredDatePickerStyle = UIDatePickerStyleWheels;
+//                break;
+//            default:
+//                datePicker.preferredDatePickerStyle = UIDatePickerStyleAutomatic;
+//                break;
+//        }
     }
 }
 
